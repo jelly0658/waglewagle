@@ -11,11 +11,10 @@ input {
 }
 
 body {
-  background-color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fbede1;
+  font-family: 'Sunflower', sans-serif;
   font-size: 14px;
-  color: white;
+  color: #55445c;
 }
 
 button {
@@ -107,27 +106,32 @@ form {
   flex-grow: 1;
   height: 40px;
   padding: 0px 20px;
-  color: white;
-  border: 1px solid #04aaff;
+  color: #55445c;
+  border: 1px solid #55445c;
   border-radius: 20px;
   font-weight: 500;
   font-size: 12px;
 }
 
+.factoryInput__input::placeholder {
+  color: #55445c;
+  font-family: 'Sunflower', sans-serif;
+}
+
 .factoryInput__arrow {
   position: absolute;
   right: 0;
-  background-color: #04aaff;
+  background-color: #55445c;
   height: 40px;
   width: 40px;
   padding: 10px 0px;
   text-align: center;
   border-radius: 20px;
-  color: white;
+  color: #fbd157;
 }
 
 .factoryInput__label {
-  color: #04aaff;
+  color: #55445c;
   cursor: pointer;
 }
 
@@ -230,11 +234,18 @@ form {
   border-radius: 20px;
   border: none;
   padding: 10px 0px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
-  width: 150px;
-  background: white;
+  width: 320px;
+  background: #fbd157;
   cursor: pointer;
+  color: #55445c;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 700;
+}
+
+.Logo {
+  margin-bottom: 30px;
 }
 
 /* AuthForm */
@@ -252,10 +263,11 @@ form {
 
 .authSubmit {
   text-align: center;
-  background: #04aaff;
+  background: #55445c;
   color: white;
   margin-top: 10;
   cursor: pointer;
+  color: #fbd157;
 }
 
 .authError {
@@ -266,7 +278,7 @@ form {
 }
 
 .authSwitch {
-  color: #04aaff;
+  color: #55445c;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 50px;

@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faTwitter,
     faGoogle
 } from "@fortawesome/free-brands-svg-icons";
 import { authService, firebaseInstance } from "../firebase";
@@ -15,23 +14,21 @@ const Auth = () => {
         let provider;
         if (name === "google") {
             provider = new firebaseInstance.auth.GoogleAuthProvider();
-        } else if (name === "github") {
-            provider = new firebaseInstance.auth.GithubAuthProvider();
         }
         await authService.signInWithPopup(provider);
     };
     return (
         <div className="authContainer">
-            <FontAwesomeIcon
-                icon={faTwitter}
-                color={"#04AAFF"}
-                size="3x"
-                style={{ marginBottom: 30 }}
+            <img
+                src={"/logo.png"}
+                className="Logo"
+                alt="Logo"
+                style={{ width: "200px", height: "auto" }}
             />
             <AuthForm />
             <div className="authBtns">
                 <button onClick={onSocialClick} name="google" className="authBtn">
-                    Continue with Google <FontAwesomeIcon icon={faGoogle} />
+                    구글로 로그인하기 <FontAwesomeIcon icon={faGoogle} color={"red"} />
                 </button>
             </div>
         </div>
