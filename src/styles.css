@@ -286,3 +286,92 @@ form {
   font-size: 12px;
   text-decoration: underline;
 }
+
+/* airing */
+.onePoster {
+  width: 160px;
+  height: 180px;
+}
+
+.posterContainer {
+  width: 100%;
+  max-width: 320px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.mentionBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  margin-top: 20px;
+}
+
+.mentionBtn {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 0px;
+  font-size: 14px;
+  text-align: center;
+  width: 320px;
+  background: #fbd157;
+  cursor: pointer;
+  color: #55445c;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 700;
+}
+
+.textContainer {
+  margin-top: 15px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.onePeople1 {
+  height: 140px;
+  width: 140px;
+  border-radius: 70px;
+  margin-right: 10px;
+}
+
+.onePeople2 {
+  height: 140px;
+  width: 140px;
+  border-radius: 70px;
+  margin-left: 10px;
+}
+
+.peopleContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.titleContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mainPoster {
+  width: 140px;
+  height: 160px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}

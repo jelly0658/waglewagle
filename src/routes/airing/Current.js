@@ -14,26 +14,70 @@ import Airing9 from "./Airing9";
 const Current = () => {
     return (
         <>
-            <p><Link to="/airing1">airing1</Link></p>
-            <Route path="/airing1" component={Airing1} />
-            <p><Link to="/airing2">airing2</Link></p>
-            <Route path="/airing2" component={Airing2} />
-            <p><Link to="/airing3">airing3</Link></p>
-            <Route path="/airing3" component={Airing3} />
-            <p><Link to="/airing4">airing4</Link></p>
-            <Route path="/airing4" component={Airing4} />
-            <p><Link to="/airing5">airing5</Link></p>
-            <Route path="/airing5" component={Airing5} />
-            <p><Link to="/airing6">airing6</Link></p>
-            <Route path="/airing6" component={Airing6} />
-            <p><Link to="/airing7">airing7</Link></p>
-            <Route path="/airing7" component={Airing7} />
-            <p><Link to="/airing8">airing8</Link></p>
-            <Route path="/airing8" component={Airing8} />
-            <p><Link to="/airing9">airing9</Link></p>
-            <Route path="/airing9" component={Airing9} />
-            <p><Link to="/airing10">airing10</Link></p>
-            <Route path="/airing10" component={Airing10} />
+            <div className="container">
+                <ul style={{ display: "flex", justifyContent: "center" }}>
+                    <li>
+                        <Link to="/airing1">
+                            <img src="/airing/airing1 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing1" component={Airing1} />
+                    </li>
+                    <li>
+                        <Link to="/airing2">
+                            <img src="/airing/airing2 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing2" component={Airing2} />
+                    </li>
+                </ul>
+                <ul style={{ display: "flex", justifyContent: "center" }}>
+                    <li>
+                        <Link to="/airing3">
+                            <img src="/airing/airing3 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing3" component={Airing3} />
+                        <Link to="/airing4">
+                            <img src="/airing/airing4 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing4" component={Airing4} />
+                    </li>
+                </ul>
+                <ul style={{ display: "flex", justifyContent: "center" }}>
+                    <li>
+                        <Link to="/airing5">
+                            <img src="/airing/airing5 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing5" component={Airing5} />
+                        <Link to="/airing6">
+                            <img src="/airing/airing6 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing6" component={Airing6} />
+                    </li>
+                </ul>
+                <ul style={{ display: "flex", justifyContent: "center" }}>
+                    <li>
+                        <Link to="/airing7">
+                            <img src="/airing/airing7 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing7" component={Airing7} />
+                        <Link to="/airing8">
+                            <img src="/airing/airing8 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing8" component={Airing8} />
+                    </li>
+                </ul>
+                <ul style={{ display: "flex", justifyContent: "center" }}>
+                    <li>
+                        <Link to="/airing9">
+                            <img src="/airing/airing9 poster.png" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing9" component={Airing9} />
+                        <Link to="/airing10">
+                            <img src="/airing/airing10 poster.jpg" className="mainPoster" alt="poster" />
+                        </Link>
+                        <Route path="/airing10" component={Airing10} />
+                    </li>
+                </ul>
+            </div>
         </>
     )
 }
