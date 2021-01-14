@@ -60,12 +60,12 @@ const NweetFactory = ({ userObj }) => {
                     onChange={onChange}
                     type="text"
                     placeholder="같이 달글하면서 보고싶은 방송 추천해주세요"
-                    maxLength={120}
+                    maxLength={150}
                 />
                 <input type="submit" value="&rarr;" className="factoryInput__arrow" />
             </div>
             <label for="attach-file" className="factoryInput__label">
-                <span>Add photos</span>
+                <span>이미지 추가하기</span>
                 <FontAwesomeIcon icon={faPlus} />
             </label>
             <input
@@ -86,7 +86,7 @@ const NweetFactory = ({ userObj }) => {
                         }}
                     />
                     <div className="factoryForm__clear" onClick={onClearAttachment}>
-                        <span>Remove</span>
+                        <span>제거하기</span>
                         <FontAwesomeIcon icon={faTimes} />
                     </div>
                 </div>

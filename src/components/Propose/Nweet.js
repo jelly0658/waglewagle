@@ -7,7 +7,7 @@ const Nweet = ({ nweetObj, isOwner }) => {
     const [editing, setEditing] = useState(false);
     const [newNweet, setNewNweet] = useState(nweetObj.text);
     const onDeleteClick = async () => {
-        const ok = window.confirm("Are you sure you want to delete this nweet?");
+        const ok = window.confirm("달글을 지울까요?");
         if (ok) {
             await dbService.doc(`Propose/${nweetObj.id}`).delete();
             await storageService.refFromURL(nweetObj.attachmentUrl).delete();

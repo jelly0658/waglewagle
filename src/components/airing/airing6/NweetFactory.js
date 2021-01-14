@@ -59,13 +59,13 @@ const NweetFactory = ({ userObj }) => {
                     value={nweet}
                     onChange={onChange}
                     type="text"
-                    placeholder="What's on your mind?"
-                    maxLength={120}
+                    placeholder="150자 이내로 실시간 달글 달려주세요!"
+                    maxLength={150}
                 />
                 <input type="submit" value="&rarr;" className="factoryInput__arrow" />
             </div>
             <label for="attach-file" className="factoryInput__label">
-                <span>Add photos</span>
+                <span>이미지 추가하기</span>
                 <FontAwesomeIcon icon={faPlus} />
             </label>
             <input
@@ -86,7 +86,7 @@ const NweetFactory = ({ userObj }) => {
                         }}
                     />
                     <div className="factoryForm__clear" onClick={onClearAttachment}>
-                        <span>Remove</span>
+                        <span>제거하기</span>
                         <FontAwesomeIcon icon={faTimes} />
                     </div>
                 </div>

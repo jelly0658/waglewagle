@@ -43,6 +43,14 @@ form {
   flex-direction: column;
 }
 
+.mainContainer {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+}
+
 .formInput {
   width: 100%;
   padding: 10px 20px;
@@ -51,6 +59,7 @@ form {
   text-align: center;
   background-color: white;
   color: black;
+  box-sizing:border-box;
 }
 
 .formBtn {
@@ -58,10 +67,11 @@ form {
   width: 100%;
   padding: 7px 20px;
   text-align: center;
-  color: white;
+  color: #55445c;
   border-radius: 20px;
-  background-color: #04aaff;
+  background-color: #fbd157;
   cursor: pointer;
+  box-sizing:border-box;
 }
 
 .cancelBtn {
@@ -128,6 +138,7 @@ form {
   text-align: center;
   border-radius: 20px;
   color: #fbd157;
+  box-sizing:border-box;
 }
 
 .factoryInput__label {
@@ -147,13 +158,12 @@ form {
 }
 
 .factoryForm__attachment img {
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
+  height: auto;
+  width: 160px;
 }
 
 .factoryForm__clear {
-  color: #04aaff;
+  color: red;
   cursor: pointer;
   text-align: center;
 }
@@ -189,13 +199,8 @@ form {
 }
 
 .nweet img {
-  right: -10px;
-  top: 20px;
-  position: absolute;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
+  width: 300px;
+  height: auto;
 }
 
 .nweet__actions {
@@ -259,13 +264,14 @@ form {
   margin-bottom: 10px;
   font-size: 12px;
   color: black;
+  box-sizing:border-box;
 }
 
 .authSubmit {
   text-align: center;
   background: #55445c;
   color: white;
-  margin-top: 10;
+  margin-top: 10px;
   cursor: pointer;
   color: #fbd157;
 }
@@ -291,6 +297,7 @@ form {
 .onePoster {
   width: 160px;
   height: 180px;
+  border-radius: 15px;
 }
 
 .posterContainer {
@@ -374,4 +381,5 @@ form {
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 10px;
+  border-radius: 15px;
 }

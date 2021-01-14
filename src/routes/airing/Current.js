@@ -14,7 +14,10 @@ import Airing9 from "./Airing9";
 const Current = () => {
     return (
         <>
-            <div className="container">
+            <div className="mainContainer">
+                <div className="titleContainer">
+                    <h1 className="title" style={{ marginBottom: 20 }}>달리고 싶은 드라마를 선택하세요.</h1>
+                </div>
                 <ul style={{ display: "flex", justifyContent: "center" }}>
                     <li>
                         <Link to="/airing1">

@@ -8,12 +8,12 @@ const Navigation = ({ userObj }) => (
         <ul style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
             <li>
                 <Link to="/" style={{ marginRight: 10 }}>
-                    <FontAwesomeIcon icon={faPlay} color={"#55445c"} size="2x" />
+                    <FontAwesomeIcon icon={faPlay} color={"red"} size="2x" />
                 </Link>
             </li>
             <li>
                 <Link to="/Propose" style={{ marginLeft: 10, marginRight: 10 }}>
-                    <FontAwesomeIcon icon={faPause} color={"#55445c"} size="2x" />
+                    <FontAwesomeIcon icon={faPause} color={"tomato"} size="2x" />
                 </Link>
             </li>
             <li>
@@ -27,10 +27,10 @@ const Navigation = ({ userObj }) => (
                         fontSize: 12,
                     }}
                 >
-                    <FontAwesomeIcon icon={faUser} color={"#55445c"} size="2x" />
+                    <FontAwesomeIcon icon={faUser} color={"#ff577f"} size="2x" />
                     <span style={{ marginTop: 10 }}>
                         {userObj.displayName
-                            ? `${userObj.displayName}의 Profile`
+                            ? `${userObj.displayName}의 프로필`
                             : "Profile"}
                     </span>
                 </Link>
