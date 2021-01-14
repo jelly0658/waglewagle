@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { authService } from "../firebase";
 import { useHistory } from "react-router-dom";
-export default ({ refreshUser, userObj }) => {
+
+const Profile = ({ refreshUser, userObj }) => {
     const history = useHistory();
     const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
     const onLogOutClick = () => {
@@ -49,3 +50,5 @@ export default ({ refreshUser, userObj }) => {
         </div>
     );
 };
+
+export default Profile

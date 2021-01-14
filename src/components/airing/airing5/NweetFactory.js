@@ -84,6 +84,7 @@ const NweetFactory = ({ userObj }) => {
                         style={{
                             backgroundImage: attachment,
                         }}
+                        alt="user's"
                     />
                     <div className="factoryForm__clear" onClick={onClearAttachment}>
                         <span>제거하기</span>
