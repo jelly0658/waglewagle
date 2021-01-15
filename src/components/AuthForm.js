@@ -58,13 +58,15 @@ const AuthForm = () => {
                 <input
                     type="submit"
                     className="authInput authSubmit"
-                    value={newAccount ? "가입하기" : "로그인"}
+                    value={newAccount ? "로그인" : "가입하기"}
                 />
                 {error && <span className="authError">{error}</span>}
             </form>
-            <span onClick={toggleAccount} className="authSwitch">
-                {newAccount ? "로그인" : "가입하기"}
-            </span>
+            <div className="authBtns" >
+                <span onClick={toggleAccount} className="authBtn">
+                    {newAccount ? "가입하기" : "로그인"}
+                </span>
+            </div>
         </>
     );
 };
