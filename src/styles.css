@@ -192,15 +192,19 @@ form {
   display: flex;
   flex-direction: column;
   color: rgba(0, 0, 0, 0.8);
+  box-sizing:border-box;
 }
 
 .nweet h4 {
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .nweet img {
-  width: 300px;
+  width: 280px;
   height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .nweet__actions {
