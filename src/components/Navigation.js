@@ -1,12 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn, faTv, faUser } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
-const Navigation = ({ userObj }) => (
+const Item = styled.li` 
+    color: ${props => (props.current ? "#fbd157" : "#fbede1")};
+    transition: color 0.3s ease-in-out;
+`
+
+const Navigation = ({ userObj, location: { pathname } }) => (
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__btn">
+            <Item class="nav__btn" current={
+                pathname
+                !== "/Propose" &&
+                pathname
+                !== "/profile"}>
                 <Link
                     to="/"
                     style={{
@@ -15,13 +25,13 @@ const Navigation = ({ userObj }) => (
                         alignItems: "center",
                         fontSize: 12
                     }}>
-                    <FontAwesomeIcon icon={faTv} color={"red"} size="2x" />
+                    <FontAwesomeIcon icon={faTv} size="2x" />
                     <span style={{ marginTop: 10 }}>
                         방송
                         </span>
                 </Link>
-            </li>
-            <li class="nav__btn">
+            </Item>
+            <Item class="nav__btn" current={pathname === "/Propose"}>
                 <Link
                     to="/Propose"
                     style={{
@@ -30,13 +40,13 @@ const Navigation = ({ userObj }) => (
                         alignItems: "center",
                         fontSize: 12
                     }}>
-                    <FontAwesomeIcon icon={faBullhorn} color={"tomato"} size="2x" />
+                    <FontAwesomeIcon icon={faBullhorn} size="2x" />
                     <span style={{ marginTop: 10 }}>
                         제안하기
                         </span>
                 </Link>
-            </li>
-            <li class="nav__btn">
+            </Item>
+            <Item class="nav__btn" current={pathname === "/profile"}>
                 <Link
                     to="/profile"
                     style={{
@@ -46,16 +56,16 @@ const Navigation = ({ userObj }) => (
                         fontSize: 12
                     }}
                 >
-                    <FontAwesomeIcon icon={faUser} color={"#ff577f"} size="2x" />
+                    <FontAwesomeIcon icon={faUser} size="2x" />
                     <span style={{ marginTop: 10 }}>
                         {userObj.displayName
                             ? `${userObj.displayName}의 프로필`
                             : "프로필"}
                     </span>
                 </Link>
-            </li>
+            </Item>
         </ul>
     </nav>
 );
 
-export default Navigation;
+export default withRouter(Navigation);

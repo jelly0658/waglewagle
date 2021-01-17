@@ -19,11 +19,9 @@ const Current = () => {
                     <h3 className="screen-header__title">실시간 달글</h3>
                 </header>
                 <main className="main-screen">
-                    <div className="user-component">
+                    <Link to="/airing1" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing1">
-                                <img src="/airing/airing1 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing1 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing1" component={Airing1} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">철인왕후</h1>
@@ -36,12 +34,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing2" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing2">
-                                <img src="/airing/airing2 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing2 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing2" component={Airing2} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">경이로운 소문</h1>
@@ -54,12 +50,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing3" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing3">
-                                <img src="/airing/airing3 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing3 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing3" component={Airing3} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">여신강림</h1>
@@ -72,12 +66,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing4" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing4">
-                                <img src="/airing/airing4 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing4 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing4" component={Airing4} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">런 온</h1>
@@ -90,12 +82,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing5" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing5">
-                                <img src="/airing/airing5 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing5 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing5" component={Airing5} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">비밀의 남자</h1>
@@ -108,12 +98,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing6" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing6">
-                                <img src="/airing/airing6 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing6 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing6" component={Airing6} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">스위트 홈</h1>
@@ -126,12 +114,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing7" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing7">
-                                <img src="/airing/airing7 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing7 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing7" component={Airing7} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">킹덤</h1>
@@ -144,12 +130,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing8" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing8">
-                                <img src="/airing/airing8 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing8 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing8" component={Airing8} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">인간수업</h1>
@@ -162,12 +146,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing9" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing9">
-                                <img src="/airing/airing9 poster.png" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing9 poster.png" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing9" component={Airing9} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">좋아하면 울리는</h1>
@@ -180,12 +162,10 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
-                    <div className="user-component">
+                    </Link>
+                    <Link to="/airing10" className="user-component">
                         <div className="user-component__column">
-                            <Link to="/airing10">
-                                <img src="/airing/airing10 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
-                            </Link>
+                            <img src="/airing/airing10 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
                             <Route path="/airing10" component={Airing10} />
                             <div className="user-component__text">
                                 <h1 className="user-component__title">보건교사 안은영</h1>
@@ -198,7 +178,7 @@ const Current = () => {
                             <span className="user-component__time">
                             </span>
                         </div>
-                    </div>
+                    </Link>
                 </main>
             </div>
         </>
