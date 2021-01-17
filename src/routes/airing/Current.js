@@ -14,72 +14,192 @@ import Airing9 from "./Airing9";
 const Current = () => {
     return (
         <>
-            <div className="mainContainer">
-                <div className="titleContainer">
-                    <h1 className="title" style={{ marginBottom: 20 }}>달리고 싶은 드라마를 선택하세요.</h1>
-                </div>
-                <ul style={{ display: "flex", justifyContent: "center" }}>
-                    <li>
-                        <Link to="/airing1">
-                            <img src="/airing/airing1 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing1" component={Airing1} />
-                    </li>
-                    <li>
-                        <Link to="/airing2">
-                            <img src="/airing/airing2 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing2" component={Airing2} />
-                    </li>
-                </ul>
-                <ul style={{ display: "flex", justifyContent: "center" }}>
-                    <li>
-                        <Link to="/airing3">
-                            <img src="/airing/airing3 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing3" component={Airing3} />
-                        <Link to="/airing4">
-                            <img src="/airing/airing4 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing4" component={Airing4} />
-                    </li>
-                </ul>
-                <ul style={{ display: "flex", justifyContent: "center" }}>
-                    <li>
-                        <Link to="/airing5">
-                            <img src="/airing/airing5 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing5" component={Airing5} />
-                        <Link to="/airing6">
-                            <img src="/airing/airing6 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing6" component={Airing6} />
-                    </li>
-                </ul>
-                <ul style={{ display: "flex", justifyContent: "center" }}>
-                    <li>
-                        <Link to="/airing7">
-                            <img src="/airing/airing7 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing7" component={Airing7} />
-                        <Link to="/airing8">
-                            <img src="/airing/airing8 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing8" component={Airing8} />
-                    </li>
-                </ul>
-                <ul style={{ display: "flex", justifyContent: "center" }}>
-                    <li>
-                        <Link to="/airing9">
-                            <img src="/airing/airing9 poster.png" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing9" component={Airing9} />
-                        <Link to="/airing10">
-                            <img src="/airing/airing10 poster.jpg" className="mainPoster" alt="poster" />
-                        </Link>
-                        <Route path="/airing10" component={Airing10} />
-                    </li>
-                </ul>
+            <div className="currentContainer">
+                <header className="screen-header">
+                    <h3 className="screen-header__title">실시간 달글</h3>
+                </header>
+                <main className="main-screen">
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing1">
+                                <img src="/airing/airing1 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing1" component={Airing1} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">철인왕후</h1>
+                                <h2 className="user-component__subtitle">
+                                    토, 일 PM 09:00 tvN
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing2">
+                                <img src="/airing/airing2 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing2" component={Airing2} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">경이로운 소문</h1>
+                                <h2 className="user-component__subtitle">
+                                    토, 일 PM 10:30 OCN
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing3">
+                                <img src="/airing/airing3 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing3" component={Airing3} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">여신강림</h1>
+                                <h2 className="user-component__subtitle">
+                                    수, 목 PM 10:30 tvN
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing4">
+                                <img src="/airing/airing4 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing4" component={Airing4} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">런 온</h1>
+                                <h2 className="user-component__subtitle">
+                                    수, 목 PM 09:00 JTBC
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing5">
+                                <img src="/airing/airing5 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing5" component={Airing5} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">비밀의 남자</h1>
+                                <h2 className="user-component__subtitle">
+                                    월 ~ 금 PM 07:50 KBS2
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing6">
+                                <img src="/airing/airing6 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing6" component={Airing6} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">스위트 홈</h1>
+                                <h2 className="user-component__subtitle">
+                                    2020.12.18 시즌시작 NETFLIX
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing7">
+                                <img src="/airing/airing7 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing7" component={Airing7} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">킹덤</h1>
+                                <h2 className="user-component__subtitle">
+                                    2020.03.13 시즌시작(6부작) NETFLIX
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing8">
+                                <img src="/airing/airing8 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing8" component={Airing8} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">인간수업</h1>
+                                <h2 className="user-component__subtitle">
+                                    2020.04.29 시즌시작(10부작) NETFLIX
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing9">
+                                <img src="/airing/airing9 poster.png" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing9" component={Airing9} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">좋아하면 울리는</h1>
+                                <h2 className="user-component__subtitle">
+                                    2019.08.22 시즌시작(8부작) NETFLIX
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                    <div className="user-component">
+                        <div className="user-component__column">
+                            <Link to="/airing10">
+                                <img src="/airing/airing10 poster.jpg" className="user-component__avatar user-component__avatar" alt="poster" />
+                            </Link>
+                            <Route path="/airing10" component={Airing10} />
+                            <div className="user-component__text">
+                                <h1 className="user-component__title">보건교사 안은영</h1>
+                                <h2 className="user-component__subtitle">
+                                    2020.09.25 시즌시작(6부작) NETFLIX
+                            </h2>
+                            </div>
+                        </div>
+                        <div className="user-component__column">
+                            <span className="user-component__time">
+                            </span>
+                        </div>
+                    </div>
+                </main>
             </div>
         </>
     )
