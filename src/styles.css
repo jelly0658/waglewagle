@@ -412,10 +412,6 @@ form {
   margin-bottom: 20px;
   margin-left: 10px;
 }
-.user-component:hover {
-  background-color: #fbd157;
-  opacity: 60%;
-}
 .user-component,
 .user-component__column:first-child {
   display: flex;
