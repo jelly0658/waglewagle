@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullhorn, faTv, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn, faHome, faTv, faUser } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 const Item = styled.li` 
@@ -13,10 +13,28 @@ const Navigation = ({ userObj, location: { pathname } }) => (
     <nav class="nav">
         <ul class="nav__list">
             <Item class="nav__btn" current={
+                pathname === "/home"}>
+                <Link
+                    to="/home"
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        fontSize: 12
+                    }}>
+                    <FontAwesomeIcon icon={faHome} size="2x" />
+                    <span style={{ marginTop: 10 }}>
+                        홈
+                        </span>
+                </Link>
+            </Item>
+            <Item class="nav__btn" current={
                 pathname
                 !== "/Propose" &&
                 pathname
-                !== "/profile"}>
+                !== "/profile" &&
+                pathname
+                !== "/home"}>
                 <Link
                     to="/"
                     style={{

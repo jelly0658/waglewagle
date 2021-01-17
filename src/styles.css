@@ -400,11 +400,21 @@ form {
 }
 
 /* chat */
+.main-screen{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 .user-component {
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
+}
+.user-component:hover {
+  background-color: #fbd157;
+  opacity: 60%;
 }
 .user-component,
 .user-component__column:first-child {
@@ -460,6 +470,7 @@ form {
   align-items: center;
   padding: var(--horizontal-space);
   margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .screen-header__title {

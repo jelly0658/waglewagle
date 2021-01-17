@@ -25,6 +25,7 @@ import Airing7Mention from "routes/airing/airingRoutes/Airing7Mention";
 import Airing8Mention from "routes/airing/airingRoutes/Airing8Mention";
 import Airing9Mention from "routes/airing/airingRoutes/Airing9Mention";
 import Airing10Mention from "routes/airing/airingRoutes/Airing10Mention";
+import Home from "routes/Home";
 
 const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
     return (
@@ -41,7 +42,9 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
                             display: "flex",
                             justifyContent: "center",
                         }}
-                    >
+                    >   <Route exact path="/home">
+                            <Home userObj={userObj} />
+                        </Route>
                         <Route exact path="/">
                             <Current userObj={userObj} />
                         </Route>
@@ -114,7 +117,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
                     </div>
                 ) : (
                         <>
-                            <Route exact path="/">
+                            <Route exact path="/home">
                                 <Auth />
                             </Route>
                         </>
