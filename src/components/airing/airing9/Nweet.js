@@ -32,7 +32,7 @@ const Nweet = ({ nweetObj, isOwner }) => {
             {editing ? (
                 <>
                     <form onSubmit={onSubmit} className="container nweetEdit">
-                        <input
+                        <textarea
                             type="text"
                             placeholder="Edit your nweet"
                             value={newNweet}
@@ -40,6 +40,7 @@ const Nweet = ({ nweetObj, isOwner }) => {
                             autoFocus
                             onChange={onChange}
                             className="formInput"
+                            spellCheck="false"
                         />
                         <input type="submit" value="달글 수정하기" className="formBtn" />
                     </form>

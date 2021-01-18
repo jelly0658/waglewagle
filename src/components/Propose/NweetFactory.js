@@ -54,14 +54,17 @@ const NweetFactory = ({ userObj }) => {
     return (
         <form onSubmit={onSubmit} className="factoryForm">
             <div className="factoryInput__container">
-                <input
+                <textarea
+                    cols="30"
+                    rows="3"
                     className="factoryInput__input"
                     value={nweet}
                     onChange={onChange}
                     type="text"
-                    placeholder="같이 달글하면서 보고싶은 방송 추천해주세요"
-                    maxLength={150}
-                />
+                    placeholder="달글하면서 보고싶은 방송 추천해주세요"
+                    maxLength={400}
+                    spellCheck="false"
+                ></textarea>
                 <input type="submit" value="&rarr;" className="factoryInput__arrow" />
             </div>
             <label for="attach-file" className="factoryInput__label">

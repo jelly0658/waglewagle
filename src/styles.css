@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+textarea {
+  overflow: auto;
+  border: 1px solid #55445c;
+  resize: none;
+  border-radius: 0;
+  appearance: none;
+  text-decoration: none;
+}
+
 input {
   all: unset;
   box-sizing: border-box;
@@ -63,6 +72,7 @@ form {
   text-align: center;
   background-color: white;
   color: black;
+  font-family: 'Sunflower', sans-serif;
   box-sizing:border-box;
 }
 
@@ -117,27 +127,30 @@ form {
 }
 
 .factoryInput__input {
+  background-color: #fbede1;
   flex-grow: 1;
-  height: 40px;
+  height: 80px;
   padding: 0px 20px;
   color: #55445c;
   border: 1px solid #55445c;
   border-radius: 20px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .factoryInput__input::placeholder {
+  text-align: start;
   color: #55445c;
   font-family: 'Sunflower', sans-serif;
 }
 
 .factoryInput__arrow {
-  position: absolute;
-  right: 0;
+  position: relative;
   background-color: #55445c;
   height: 40px;
   width: 40px;
+  margin-left: 2px;
   padding: 10px 0px;
   text-align: center;
   border-radius: 20px;
@@ -196,10 +209,11 @@ form {
   display: flex;
   flex-direction: column;
   color: rgba(0, 0, 0, 0.8);
-  box-sizing:border-box;
+  word-break: break-all;
 }
 
 .nweet h4 {
+  padding-top: 7px;
   font-size: 14px;
   margin-bottom: 5px;
   line-height: 20px;
