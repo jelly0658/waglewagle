@@ -117,7 +117,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
                     </div>
                 ) : (
                         <>
-                            <Route exact path="/home">
+                            <Route exact path="/">
                                 <Auth />
                             </Route>
                         </>

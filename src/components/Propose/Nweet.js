@@ -42,10 +42,10 @@ const Nweet = ({ nweetObj, isOwner }) => {
                             className="formInput"
                             spellCheck="false"
                         />
-                        <input type="submit" value="Update Nweet" className="formBtn" />
+                        <input type="submit" value="제안 수정하기" className="formBtn" />
                     </form>
                     <span onClick={toggleEditing} className="formBtn cancelBtn">
-                        Cancel
+                        취소
           </span>
                 </>
             ) : (
