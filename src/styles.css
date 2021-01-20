@@ -316,6 +316,24 @@ form {
   text-decoration: underline;
 }
 
+.authText {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.authInfo {
+  margin-bottom: 5px;
+}
+
+.authText h2 strong {
+  font-weight: bolder;
+}
+
+.authText h2 red {
+  color: red;
+}
+
 /* airing */
 .onePoster {
   width: 160px;
