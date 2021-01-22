@@ -124,7 +124,6 @@ form {
   position: relative;
   margin-bottom: 20px;
   width: 100%;
-  box-sizing:border-box;
 }
 
 .factoryInput__input {
@@ -149,12 +148,12 @@ form {
 .factoryInput__arrow {
   position: relative;
   background-color: #55445c;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   margin-left: 2px;
-  padding: 10px 0px;
+  padding: 7.5px 0px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 15px;
   color: #fbd157;
   box-sizing:border-box;
 }
