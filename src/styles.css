@@ -124,6 +124,7 @@ form {
   position: relative;
   margin-bottom: 20px;
   width: 100%;
+  box-sizing:border-box;
 }
 
 .factoryInput__input {
