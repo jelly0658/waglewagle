@@ -27,11 +27,6 @@ const Auth = () => {
                     <red>"와글와글"</red>은 <strong>어떠한 개인정보도 수집하지 않습니다.</strong>
                 </h2>
             </span>
-            <ins class="kakao_ad_area"
-                data-ad-unit="DAN-8o37ybuGl854cQEg"
-                data-ad-width="320"
-                data-ad-height="100"></ins>
-            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
         </div>
     );
 };
