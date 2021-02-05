@@ -8,7 +8,7 @@ const Auth = () => {
                 src={"/logo.png"}
                 className="Logo"
                 alt="Logo"
-                style={{ width: "200px", height: "auto" }}
+                style={{ width: "200px", height: "auto", marginTop: "25px" }}
             />
             <span className="authText">
                 <h1 className="authInfo">
@@ -26,6 +26,9 @@ const Auth = () => {
                 <h2 className="authInfo">
                     <red>"와글와글"</red>은 <strong>어떠한 개인정보도 수집하지 않습니다.</strong>
                 </h2>
+            </span>
+            <span>
+                <img src="/홈.png" alt="home" style={{ width: 360 }} />
             </span>
         </div>
     );

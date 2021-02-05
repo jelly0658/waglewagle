@@ -246,7 +246,7 @@ form {
 .authContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
