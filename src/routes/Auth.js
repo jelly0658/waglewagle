@@ -8,7 +8,7 @@ const Auth = () => {
                 src={"/logo.png"}
                 className="Logo"
                 alt="Logo"
-                style={{ width: "200px", height: "auto", marginTop: "25px" }}
+                style={{ width: "320px", height: "auto", marginTop: "25px", borderRadius: "20px" }}
             />
             <span className="authText">
                 <h1 className="authInfo">
