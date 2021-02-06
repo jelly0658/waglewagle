@@ -28,7 +28,7 @@ const Auth = () => {
                 </h2>
             </span>
             <span>
-                <img src="/홈.png" alt="home" style={{ width: 360 }} />
+                <img src="/main.png" alt="home" style={{ width: 360 }} />
             </span>
         </div>
     );
